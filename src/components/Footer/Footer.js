@@ -4,7 +4,7 @@ import React from 'react';
 import './Footer.css';
 const Footer = () => {
     return (
-        <div className="footer">
+        <div className="footer py-4">
             <div className="footer-container">
             <div>
                 <h3>Contact Us</h3>
@@ -23,7 +23,6 @@ const Footer = () => {
 
             </div>
             </div>
-            <img src="../../images/instagram.png" alt="" />
             <small>
                     <FontAwesomeIcon icon={faCopyright}></FontAwesomeIcon>
                      2021 LightShot. All rights reserved.

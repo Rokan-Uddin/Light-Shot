@@ -10,8 +10,8 @@ const Instructor = () => {
     },[])
     return (
         <div>
-            <h1>Popular Tutor</h1>
-                    <div className=" container tutors mb-5">
+            <h1 className="my-4">Popular Instructor</h1>
+           <div className=" container tutors mb-5">
             {
                 tutors.map(tutor=> <Tutor 
                     key={tutor.id}

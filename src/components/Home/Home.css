@@ -1,3 +1,8 @@
 .home-header{
     background-color: rgb(34, 228, 235);
 }
+.demo-courses{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
