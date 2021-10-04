@@ -21,16 +21,13 @@ const AboutUs = () => {
                     <img src="https://www.shawacademy.com/images/about/new/about-banner-img.png" alt="" />
                 </div>
                 </div>
- 
             </div>
-
             <div className="container d-flex justify-content-around my-5 fs-5">
                 <p><span className="fs-1 text-danger fw-bold">100</span>+ Courses</p>
                 <p><span className="fs-1 text-danger fw-bold">3</span> Thousand hours of content</p>
                 <p><span className="fs-1 text-danger fw-bold">8</span> years of Teaching</p>
                 <p><span className="fs-1 text-danger fw-bold">9</span> Million Students</p>
             </div>
-            
         </div>
     );
 };

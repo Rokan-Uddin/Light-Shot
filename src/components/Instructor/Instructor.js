@@ -3,6 +3,7 @@ import Tutor from '../Tutor/Tutor';
 import './Instructor.css';
 const Instructor = () => {
     const [tutors,setTutors]=useState([]);
+    // load tutor data using useEffect 
     useEffect(()=>{
         fetch('tutor.JSON')
         .then(res=>res.json())
@@ -11,14 +12,15 @@ const Instructor = () => {
     return (
         <div>
             <h1 className="my-4">Popular Instructor</h1>
-           <div className=" container tutors mb-5">
-            {
-                tutors.map(tutor=> <Tutor 
-                    key={tutor.id}
-                    tutor={tutor}
-                     ></Tutor>  )
-            }
-        </div>
+            <div className=" container tutors mb-5">
+                {
+                    tutors.map(tutor=> <Tutor 
+                        key={tutor.id}
+                        tutor={tutor}
+                        >
+                    </Tutor>)
+                }
+            </div>
         </div>
     );
 };

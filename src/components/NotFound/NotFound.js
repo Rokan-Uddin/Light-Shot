@@ -1,6 +1,7 @@
 import React from 'react';
 import './NotFound.css';
 const NotFound = () => {
+    // NotFound Component used when url isn't valid
     return (
         <div className="d-flex align-items-center justify-content-center not-found">
             <div>

@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import CourseDemo from '../CourseDemo/CourseDemo';
 import './Home.css';
 const Home = () => {
+    // assign data to courses varible value using useState 
     const [courses,setCourses]=useState([]);
+    // load data using useEffect 
     useEffect(()=>{
         fetch('data.JSON')
         .then(res=>res.json())
@@ -19,14 +21,13 @@ const Home = () => {
                 <h3>Get Hands On Experience in Real World Software Development from Experts in the Industry. Get Ready for Professional Career.</h3>
             </div>
             <div className=" container my-5">
-                <div className="row g-4">
-                {
-                courses.map(course=> <CourseDemo course={course}> </CourseDemo> )
-            }
-                </div>
+                    <div className="row g-4">
+                    {
+                         courses.map(course=> <CourseDemo key={course.id} course={course}> </CourseDemo> )
+                    }
+                    </div>
             </div>
         </div>
     );
 };
-
 export default Home;
