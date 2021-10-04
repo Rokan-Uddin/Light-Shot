@@ -1,0 +1,15 @@
+.course{
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+.course img{
+    width: 100%;
+    height: 300px;
+}
+.details{
+    height: 50px;
+}
+.level{
+    margin-top: 0px;
+    background-color: rgb(238, 232, 232);
+}

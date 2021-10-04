@@ -1,0 +1,9 @@
+.tutor{
+    border: 1px solid rgb(28, 173, 166);
+}
+.tutor img{
+    padding-top: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
