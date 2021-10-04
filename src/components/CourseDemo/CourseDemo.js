@@ -5,10 +5,10 @@ import { Button } from 'react-bootstrap';
 import Rating from 'react-rating';
 
 const CourseDemo = (props) => {
-    console.log(props.course.title);
     const {title,url,rating,price,level,totalrating}=props.course;
     return (
-        <div className="course">
+        <div className="col-lg-3 col-md-6 col-sm-12">
+                    <div className="course">
             <img src={url} alt="" />
             <div className="d-flex justify-content-between px-3 level">
                 <p className="mt-2">Online</p>
@@ -30,6 +30,7 @@ const CourseDemo = (props) => {
             </div>
 
             <Button className="w-75" variant="success">Enroll Now</Button>
+        </div>
         </div>
     );
 };

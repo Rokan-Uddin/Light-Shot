@@ -18,10 +18,12 @@ const Home = () => {
                 <h2 className="bg-secondary text-white">Get Ahead, Improve Your Photography Skill with LightShot Training Academy</h2>
                 <h3>Get Hands On Experience in Real World Software Development from Experts in the Industry. Get Ready for Professional Career.</h3>
             </div>
-            <div className=" container demo-courses my-5">
-            {
+            <div className=" container my-5">
+                <div className="row g-4">
+                {
                 courses.map(course=> <CourseDemo course={course}> </CourseDemo> )
             }
+                </div>
             </div>
         </div>
     );

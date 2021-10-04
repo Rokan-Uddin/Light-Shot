@@ -5,18 +5,19 @@ import { Button } from 'react-bootstrap';
 import Rating from 'react-rating';
 import './Course.css';
 const Course = (props) => {
-    console.log(props.course.title);
-    const {title,details,url,rating,price,level,length,totalrating}=props.course;
+    const {title,details,url,rating,price,level,totalrating,instructor}=props.course;
     return (
-        <div className="course">
+        <div className="col-lg-4 col-md-6 col-sm-12">
+            <div className="course">
             <img src={url} alt="" />
             <div className="d-flex justify-content-between px-3 level">
                 <p className="mt-2">Online</p>
                 <p className="text-secondary mt-2"> <FontAwesomeIcon icon={faCircle} ></FontAwesomeIcon> {level}</p>
             </div>
-            <h4>{title}</h4>
+            <h4 className="text-start ms-3">{title}</h4>
+            <h6 className="text-start ms-3 mb-4 fw-bold">By <span className="text-info">{instructor}</span></h6>
             <p className="details text-secondary">{details}</p>
-            <div className="d-flex justify-content-between px-3">
+            <div className="d-flex justify-content-between px-3 mt-4">
                 <div>
                 {rating}
                 <Rating 
@@ -29,8 +30,8 @@ const Course = (props) => {
                 </div>
                 <h4 className="text-success">${price}</h4>
             </div>
-
-            <Button className="w-75" variant="success">Enroll Now</Button>
+            <Button className="w-50 mb-2" variant="success">Enroll Now</Button>
+        </div>
         </div>
     );
 };
