@@ -4,6 +4,7 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import Rating from 'react-rating';
 
+//child component of Home.js
 const CourseDemo = (props) => {
     const {title,url,rating,price,level,totalrating}=props.course;
     return (

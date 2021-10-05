@@ -12,7 +12,8 @@ const Instructor = () => {
     return (
         <div>
             <h1 className="my-4">Popular Instructor</h1>
-            <div className=" container tutors mb-5">
+            <div className=" container mb-5">
+                <div className="row g-4">
                 {
                     tutors.map(tutor=> <Tutor 
                         key={tutor.id}
@@ -20,6 +21,7 @@ const Instructor = () => {
                         >
                     </Tutor>)
                 }
+                </div>
             </div>
         </div>
     );

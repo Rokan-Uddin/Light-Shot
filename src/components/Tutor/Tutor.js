@@ -3,12 +3,13 @@ import { Card } from 'react-bootstrap';
 import Rating from 'react-rating';
 import './Turor.css';
 
-
+// child component of Instructor.js 
 const Tutor = (props) => {
     // destructuring from props.tutor
     const {name,title,rating,url,students,totalCourse}=props.tutor;
     return (
-        <Card style={{ width: '18rem' }}>
+        <div className="col-lg-3 col-sm-12">
+        <Card style={{ height: '33rem' }}>
             <Card.Img variant="top" className="card-img" src={url} />
             <Card.Body>
                 <Card.Title className="fw-bold fs-3">{name}</Card.Title>
@@ -27,7 +28,8 @@ const Tutor = (props) => {
                     ({rating})
                 </Card.Text>
             </Card.Body>
-    </Card>
+      </Card>
+        </div>
     );
 };
 
